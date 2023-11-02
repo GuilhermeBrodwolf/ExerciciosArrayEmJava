@@ -1,0 +1,110 @@
+package javaapplicationarray;
+
+/**
+ *
+ * @author guilherme_nones
+ */
+import java.util.Scanner;
+
+public class JavaApplicationArray {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+/*        
+        int maior = Integer.MIN_VALUE;
+
+        int[] vetor_oito = new int[8];
+        
+        int indice = 0;
+
+        for (int i = 0; i < 8; i++) {
+
+            System.out.println("Digite 8 números inteiros: ");
+
+            vetor_oito[i] = sc.nextInt();
+            
+            if(vetor_oito[i] > maior){
+                maior = vetor_oito[i];
+                indice = i;
+            }
+
+            
+        }        
+        System.out.println("O maior número dentro do vetor de 8 posições é: " + maior + " e o indice é: " + indice);
+*/
+/*
+1. Elabore um algoritmo que leia uma lista de 10 valores numéricos inteiros quaisquer        
+Feito isso, escreva na tela o maior e menor valor informado
+     
+        
+        int maior = Integer.MIN_VALUE;
+
+        int menor = Integer.MAX_VALUE;
+
+        int[] vetor_dez = new int[10];
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Digite 10 números inteiros para sabermos qual número é o maior e qual é o menor:");
+
+            vetor_dez[i] = sc.nextInt();
+
+            if (vetor_dez[i] > maior) {
+                maior = vetor_dez[i];
+            }
+
+            if (vetor_dez[i] < menor) {
+                menor = vetor_dez[i];
+            }
+        }
+
+        System.out.println("O maior número dentro do vetor de 10 posições é: " + maior + " e o menor é: " + menor);
+        
+*/
+/*
+2. Construa um algoritmo que leia uma lista correspondente aos preços unitários dos produtos de uma loja de material esportivo. 
+Ao final, o algoritmo deverá mostrar o valor total em estoque da loja.
+         
+         
+        double somaTotal = 0; //cria varial que vai somar os valores
+
+        double[] quantidadeProdutos = new double[5]; //cria vetor com 10 posições
+
+        for (int i = 0; i < quantidadeProdutos.length; i++) { //inicia laço repetição // .length conta as posições que tem no vetor
+            System.out.println("Digite o valot unitário de cada produto: ");
+
+            quantidadeProdutos[i] = sc.nextDouble(); // lê os valores digitados no console
+            
+            somaTotal = somaTotal + quantidadeProdutos[i];  // salva o valor digitado, + cada valor digitado novamente no laço.
+        }
+
+            System.out.println("A soma do valor de cada produto é: " + somaTotal); // imprime a soma total 
+            
+            for(double conteudoVetor : quantidadeProdutos){// busca tudo que tem dentro do vetor (foreach)
+                System.out.println(conteudoVetor);
+            }
+*/      
+/*
+3. Sabendo-se que a média de aprovação em uma disciplina é 6, escreva um algoritmo que leia uma lista de 5 médias de alunos. 
+Logo a seguir, apresente na tela a quantidade de alunos que obtiveram aprovação e a quantidade de alunos que ficaram em 
+recuperação na disciplina.
+*/
+        double[] vetorMedia = new double[5];
+        
+        int[] vetorAlunos = new int[5];
+        
+        for(int i = 0; i < 5; i++){
+            System.out.println("Digite o valor das médias de cada aluno: ");
+            
+            vetorMedia[i] = sc.nextDouble();
+            
+            if(vetorMedia < 6){
+                System.out.println("Reprovado!");
+            }else
+                System.out.println("Aprovado!");
+        }
+        
+        
+
+    }
+}
